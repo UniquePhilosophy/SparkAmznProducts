@@ -7,6 +7,8 @@ This is a relatively simple application which uses SSH to trigger a PySpark (Pyt
 ## Architecture & Security
 The architecture is centered around an EMR cluster which integrates with an S3 bucket for input, output and logging. Each node in the cluster is an EC2 instance. There is a VPC for extra security and appropriate SSH certificates and security groups for a secure workflow.
 
+The distributed nature of this task makes this a scalable and efficient operation, with work managed by a central manager node. The use of parquet files synergises with the distributed architecture to allow parallel processing of the same file by separate worker nodes.
+
 ## Logging The First Process
 Please refer to the file "first_program_run_log.txt" for a full log of the first runtime. Here is the output corresponding to the python terminal:
 ```
