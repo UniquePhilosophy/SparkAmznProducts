@@ -1,6 +1,8 @@
 # SparkAmznProducts
 PySpark script to transform remote data with an EMR cluster
 
+<img width="602" height="261" alt="SparkAmznData" src="https://github.com/user-attachments/assets/efe0e46a-d906-4214-b470-9c193a5b3ab7" />
+
 ## Concept
 This is a relatively simple application which uses SSH to trigger a PySpark (Python) script hosted in an S3 bucket. The script runs on an EMR cluster (distributed EC2 architecture) and processes Amazon Product data - including reviews and prices for a range of products within each category - in order to generate insights from the transformed data
 
